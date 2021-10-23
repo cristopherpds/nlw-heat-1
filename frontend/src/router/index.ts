@@ -10,6 +10,12 @@ const routes: Array<RouteRecordRaw> = [
         path: '/login',
         component: () => import('../views/Login.vue'),
       },
+      {
+        name: 'Message',
+        path: '/message',
+        props: true,
+        component: () => import('../views/Message.vue'),
+      },
     ],
   },
 ];
@@ -17,6 +23,20 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach(async (to, from, next) => {
+  if (to.name !== 'Login') {
+    const token = window.localStorage.getItem('@nlwheat:token');
+
+    if (token) {
+      next();
+    } else {
+      next({ name: 'Login' });
+    }
+  } else {
+    next();
+  }
 });
 
 export default router;

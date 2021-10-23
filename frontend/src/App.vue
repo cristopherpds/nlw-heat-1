@@ -1,8 +1,5 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -33,5 +30,10 @@
 body {
   background: var(--BLACK-SECONDARY);
   color: var(--GRAY-TERTIARY);
+  width: 100vw;
+}
+
+#app{
+  width: 100%;
 }
 </style>

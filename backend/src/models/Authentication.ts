@@ -74,8 +74,6 @@ export class Authentication {
       },
     );
 
-    console.log({ token, user });
-
     return { token, user };
   }
 }

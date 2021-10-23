@@ -26,8 +26,6 @@ export async function authenticated(
 
     ctx.request.body.userId = sub;
 
-    console.log(sub);
-
     await next();
   } catch (err) {
     ctx.status = 401;

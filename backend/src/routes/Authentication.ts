@@ -15,6 +15,6 @@ router.get('/github/callback', (ctx: Context) => {
   ctx.body = { code };
 });
 
-router.get('/github/login', AuthenticationController.githubLogin);
+router.post('/github/login', AuthenticationController.githubLogin);
 
 export default router;

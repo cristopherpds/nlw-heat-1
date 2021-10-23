@@ -43,11 +43,21 @@ The project allows people to write messages saying what their expectations are f
 
 This project was developed with the following technologies:
 
-- Node.js
-  - Koa
-  - SocketIO
-  - Prisma
-- TypeScript
+- **Backend**
+  - NodeJS 
+    - Koa
+    - SocketIO
+    - Prisma
+  - TypeScript
+
+- **Frontend**
+  - VueJS 3
+    - Vuex
+    - Vue router
+    - SocketIO Client
+    - Boxicons
+  - Vite
+  - TypeScript
 
 <br />
 
@@ -62,9 +72,16 @@ Access the layout in [Figma](<https://www.figma.com/file/GfMrGymDY9fU1CFfig9lJy/
 Follow the steps below to run this project
 
 - Clone o repository with `git clone https://github.com/devweslen/nlw-heat`;
-- Install all dependencies with `yarn`;
-- Change environments variables `.env.example`;
-- Start the dev server with `yarn dev`.
+- **Backend:**
+  - Go to directory backend with `cd backend`;
+  - Install all dependencies with `yarn`;
+  - Change environments variables `.env.example`;
+  - Start the dev server with `yarn dev`.
+- **Frontend:**
+  - Go to directory backend with `cd frontend`;
+  - Install all dependencies with `yarn`;
+  - Change environments variables `.env.example`;
+  - Start the dev server with `yarn dev`.
 
 <br />
 
